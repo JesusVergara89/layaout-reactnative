@@ -6,10 +6,10 @@ export default function App() {
     { name: "box 1", color: "green" },
     { name: "box 2", color: "red" },
     { name: "box 3", color: "blue" },
-    { name: "box 4", color: "yellow" },
-    { name: "box 5", color: "purple" },
-    { name: "box 6", color: "orange" },
-    { name: "box 7", color: "pink" }
+    //{ name: "box 4", color: "yellow" },
+    //{ name: "box 5", color: "purple" },
+    //{ name: "box 6", color: "orange" },
+    //{ name: "box 7", color: "pink" }
   ];
   return (
     <View style={styles.container}>
@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 0.95,
     //flexDirection: "column-reverse",
-    //flexDirection: "row",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"
