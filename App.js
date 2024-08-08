@@ -14,7 +14,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {boxArray.map((data, i) => (
-        <Box key={i} children={data.name} style={{ backgroundColor: data.color, flex: 1}} />
+        <Box key={i} children={data.name} style={{ backgroundColor: data.color}} />
       ))}
     </View>
   )
@@ -23,6 +23,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 0.95,
+    //flexDirection: "column-reverse",
+    //flexDirection: "row",
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"
