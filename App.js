@@ -24,8 +24,12 @@ const styles = StyleSheet.create({
   container: {
     //flex: 0.95,
     flexWrap: "wrap",
+    alignContent: "space-around",
     height: 300,
     alignSelf: "auto",
+    //rowGap: 10,
+    //columnGap: 10,
+    gap:10,
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"

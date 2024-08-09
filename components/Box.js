@@ -11,7 +11,9 @@ export default function Box({children, style}) {
 const styles = StyleSheet.create({
     box: {
        backgroundColor: "white",
-       padding:  20
+       padding:  20,
+       width: 90,
+       height: 90
     },
     text: {
         fontSize: 24,
