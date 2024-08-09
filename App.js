@@ -23,9 +23,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 0.95,
+    //alignItems: "stretch",
+    alignItems: "baseline",
     //flexDirection: "column-reverse",
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    //justifyContent: "space-evenly",
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"
