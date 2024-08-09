@@ -3,18 +3,18 @@ import Box from './components/Box'
 
 export default function App() {
   const boxArray = [
-    { name: "box 1", color: "green" },
-    { name: "box 2", color: "red" },
-    { name: "box 3", color: "blue" },
-    //{ name: "box 4", color: "yellow" },
-    //{ name: "box 5", color: "purple" },
-    //{ name: "box 6", color: "orange" },
-    //{ name: "box 7", color: "pink" }
+    { name: "box 1", color: "green", alignSelf: "flex-start" },
+    { name: "box 2", color: "red", alignSelf: "flex-end" },
+    { name: "box 3", color: "blue", alignSelf: "center" },
+    { name: "box 4", color: "yellow", alignSelf: "stretch" },
+    { name: "box 5", color: "purple", alignSelf: "auto" },
+    { name: "box 6", color: "orange", alignSelf: "" },
+    { name: "box 7", color: "pink", alignSelf: "" }
   ];
   return (
     <View style={styles.container}>
       {boxArray.map((data, i) => (
-        <Box key={i} children={data.name} style={{ backgroundColor: data.color}} />
+        <Box key={i} children={data.name} style={{ backgroundColor: data.color, alignSelf: data.alignSelf}} />
       ))}
     </View>
   )
@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 0.95,
     //alignItems: "stretch",
-    alignItems: "baseline",
+    //alignItems: "baseline",
     //flexDirection: "column-reverse",
-    flexDirection: "row",
+    //flexDirection: "row",
     //justifyContent: "space-evenly",
+    alignSelf: "auto",
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"
